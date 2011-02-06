@@ -71,7 +71,7 @@ tar xf %{SOURCE2} -C $RPM_BUILD_ROOT%{moh_dir}
 touch $RPM_BUILD_ROOT%{moh_dir}/.asterisk-moh-opsound-wav
 
 %clean
-cd $RPM_BUILD_DIR
+rm -rf $RPM_BUILD_ROOT
 
 %files opsound-ulaw
 %defattr(644,root,root,755)
